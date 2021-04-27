@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+  --white: #fff;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;  
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+}
+
+.logo {
+  color: var(--white);
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  font-size: 18px;
+  line-height: 21px;
+  background: rgba(53, 57, 65, 0.4);
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.main-header .menu-icon {
+  display: none;
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  padding: 8px;
+  z-index: 20;
+}
+
+.main-header ul {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;  
+}
+
+.main-header ul li {
+  margin-left: 2rem;
+  color: var(--white);
+  opacity: 50%;
+}
+
+.main-header ul .active {
+  border-bottom: solid var(--white) 4px;
+  opacity: 100%;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0 120px;
+  height: 700px;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(144, 184, 248, 0.6) 0%, rgba(95, 133, 219, 0.6) 100%);
+}
+
+.search-container img {
+  position: absolute;
+  bottom: 0;
+}
+
+.search-container .mala {
+  left: calc(50% - 325px);
+} 
+
+.search-container .menina {
+  left: calc(50% - 10px);
+  z-index: 3;
+}
+
+.search-container .menino {
+  bottom: -25px;
+  right: 120px;
+  z-index: 4;
+}
+
+.search-container .overlay {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+
+.search-content {
+  /* position: relative; */ 
+  z-index: 2;
+}
+
+.search-content h1 {
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 75px;
+  color: var(--white);
+  opacity: 90%;
+  margin-bottom: 32px;
+}
+
+.search-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-wrapper #search {
+  width: 658px;
+  height: 75px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 32px; 
+  border: none;
+  color: var(--white);
+  font-size: 24px;
+  line-height: 28px;
+  padding-left: 32px;
+}
+
+.search-wrapper label {
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.8);
+  transform: translateY(10px);
+}
+
+.search-wrapper button {
+  align-self: flex-end;
+  background: rgba(119, 255, 124);
+  border-radius: 18px;
+  width: 220px;
+  height: 52px;
+  border: none;
+  color: var(--white);
+  opacity: 80%;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-top: 16px;
+}

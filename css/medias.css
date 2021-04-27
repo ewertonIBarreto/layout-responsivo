@@ -1,0 +1,38 @@
+@media (max-width: 1023px) {
+  .main-header {
+    background: transparent;
+  }
+  .main-header nav {
+    display: none;
+  } 
+  .main-header .menu-icon {
+    display: block;
+  }
+  .search-container {
+    overflow: hidden;
+    padding: 0 34px;
+  }  
+  .search-container .overlay{
+    left: -105%;
+  }
+  .search-container .menino {
+    display: none;
+  }
+  .search-container .menina {
+    z-index: 0;
+    left: 45%;
+  } 
+  .search-content {
+    width: 100%;
+  }
+  .search-content h1 span{
+    font-size: 52px;
+    display: block;
+  }
+  .search-wrapper #search {
+    width: 100%;
+  }
+  .search-wrapper button {
+    align-self: center;
+  }
+}
