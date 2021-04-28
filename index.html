@@ -7,8 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="./css/OverlayScrollbars.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/medias.css">
+  <script type="text/javascript" src="./js/OverlayScrollbars.min.js"></script>
   <title>Layout Responsivo</title>
 </head>
 
@@ -26,7 +28,7 @@
         <li>Ajuda</li>
         <li>
           <i class="material-icons">person</i>
-          <li />
+        </li>
       </ul>
     </nav>
   </header>
@@ -42,15 +44,21 @@
       <div class="search-wrapper">
         <label for="search">Digite sua pesquisa</label>
         <input type="text" id="search">
-        <button>Pesquisar</button>
+        <button class="main-button">Pesquisar</button>
       </div>
     </div>
 
   </section>
 
   <section class="banner-container">
-    <h1><i class="material-icons">rss_feed</i> Blog</h1>
+    <h1><i class="material-icons">vertical_split</i> Blog</h1>
     <p>Posts mais recentes</p>
+
+    <button class="navigate-next">
+      <i class="material-icons-outlined">
+        arrow_forward_ios
+      </i>
+    </button>
 
     <div class="blog-wrapper">
       <div class="box-blog">
@@ -68,7 +76,7 @@
           commodo consequat.
           Duis aute irure dolor in reprehenderit...
         </p>
-        <button>Abrir</button>
+        <button class="main-button">Abrir</button>
       </div>
       <div class="box-blog">
         <img src="assets/post-blog.png" alt="Homem com mochila nas costas" />
@@ -85,7 +93,7 @@
           commodo consequat.
           Duis aute irure dolor in reprehenderit...
         </p>
-        <button>Abrir</button>
+        <button class="main-button">Abrir</button>
       </div>
       <div class="box-blog">
         <img src="assets/post-blog.png" alt="Homem com mochila nas costas" />
@@ -102,7 +110,7 @@
           commodo consequat.
           Duis aute irure dolor in reprehenderit...
         </p>
-        <button>Abrir</button>
+        <button class="main-button">Abrir</button>
       </div>
 
       <div class="box-blog">
@@ -120,7 +128,7 @@
           commodo consequat.
           Duis aute irure dolor in reprehenderit...
         </p>
-        <button>Abrir</button>
+        <button class="main-button">Abrir</button>
       </div>
       <div class="clear"></div>
     </div>
@@ -128,7 +136,67 @@
   <div class="clear"></div>
 
   <section class="guias-container">
-    <h2>Guias</h2>
+
+    <h1><i class="material-icons">forum</i> Guias</h1>
+    <p>Guias mais recentes</p>
+
+    <div class="guias">
+
+      <div class="guia">
+        <img src="./assets/masp.jpg">
+        <div class="guia-info">
+          <h1>Lorem</h1>
+          <span class="guia-info-localizacao">
+            <i class="material-icons">pin_drop</i>
+            <span>São Paulo</span>
+          </span>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerci ation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat...
+          </p>
+          <a class="main-button">Abrir guia</a>
+        </div>
+      </div>
+
+      <div class="guia">
+        <img src="./assets/masp.jpg">
+        <div class="guia-info">
+          <h1>Lorem</h1>
+          <span class="guia-info-localizacao">
+            <i class="material-icons">pin_drop</i>
+            <span>São Paulo</span>
+          </span>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerci ation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat...
+          </p>
+          <a class="main-button">Abrir guia</a>
+        </div>
+      </div>
+
+      <div class="guia">
+        <img src="./assets/masp.jpg">
+        <div class="guia-info">
+          <h1>Lorem</h1>
+          <span class="guia-info-localizacao">
+            <i class="material-icons">pin_drop</i>
+            <span>São Paulo</span>
+          </span>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerci ation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat...
+          </p>
+          <a class="main-button">Abrir guia</a>
+        </div>
+      </div>
+
+    </div>
+
+    <a class="main-button">Conferir todos os guias</a>
+
   </section>
 
 
@@ -148,5 +216,7 @@
   </footer>
 
 </body>
+  
+<script type="text/javascript" src="./js/main.js"></script>
 
 </html>
