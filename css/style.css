@@ -542,5 +542,8 @@ body {
 
 .footer-container .social-icons ul {
   display: flex;
+}
+
+.footer-container .social-icons ul li {
   cursor: pointer;
 }

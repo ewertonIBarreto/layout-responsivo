@@ -164,4 +164,13 @@
 
   }
 
+  /** footer **/
+  footer div.social-icons {
+    flex-direction: column;
+  }
+
+  footer div.social-icons p {
+    margin-bottom: 1em;
+  }
+
 }
